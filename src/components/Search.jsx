@@ -5,7 +5,6 @@ import {MagnifyingGlassIcon} from 'react-native-heroicons/outline'
 import {MapPinIcon} from 'react-native-heroicons/solid'
 
 import {fetchLocation, fetchWeatherForecast} from '../config/api'
-import Forecast from './Forecast'
 
 const Search = () => {
   const [toggleSearch, setToggleSearch] = useState(false)

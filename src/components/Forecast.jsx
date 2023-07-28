@@ -1,7 +1,7 @@
 import {Image, ScrollView, Text, View} from 'react-native'
 import {CalendarDaysIcon} from 'react-native-heroicons/solid'
 
-const Forecast = ({loc, current}) => {
+const Forecast = () => {
   return (
     <View className="flex-1 justify-around mx-4 mb-2">
       {/* Location */}
