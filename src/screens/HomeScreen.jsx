@@ -1,5 +1,6 @@
 import {Image, SafeAreaView, StatusBar, View} from 'react-native'
 
+import Forecast from '../components/Forecast'
 import Search from '../components/Search'
 
 const HomeScreen = () => {
@@ -15,6 +16,8 @@ const HomeScreen = () => {
       <SafeAreaView className="flex-1 mt-3">
         {/* Search section */}
         <Search />
+        {/* Forecast section */}
+        <Forecast />
       </SafeAreaView>
     </View>
   )
