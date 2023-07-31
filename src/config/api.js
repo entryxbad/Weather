@@ -26,7 +26,7 @@ export const fetchWeatherForecast = (params) => {
 export const fetchLocation = async (params) => {
   try {
     const data = await fetchData(locationEndpoint(params))
-    console.log('Location data:', data)
+    // console.log('Location data:', data)
     return data
   } catch (error) {
     console.log('Error from fetchLocation', error)
