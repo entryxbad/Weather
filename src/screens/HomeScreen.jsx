@@ -143,7 +143,7 @@ export default function HomeScreen() {
               <Text className="text-white text-center text-2xl font-bold">
                 {location?.name},
                 <Text className="text-lg font-semibold text-gray-300">
-                  {location?.country}
+                  {' ' + location?.country}
                 </Text>
               </Text>
               {/* weather icon */}
