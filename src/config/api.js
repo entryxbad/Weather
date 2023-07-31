@@ -23,7 +23,7 @@ export const fetchWeatherForecast = (params) => {
   return fetchData(forecastEndpoint(params))
 }
 
-export const fetchLocation = async (params) => {
+export const fetchLocations = async (params) => {
   try {
     const data = await fetchData(locationEndpoint(params))
     // console.log('Location data:', data)
