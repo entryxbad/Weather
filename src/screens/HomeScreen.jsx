@@ -149,10 +149,14 @@ export default function HomeScreen() {
               {/* weather icon */}
               <View className="flex-row justify-center">
                 <Image
-                  source={weatherImages[current?.condition?.text || 'other']}
+                  source={
+                    weatherImages[current?.condition?.text] ||
+                    weatherImages['other']
+                  }
                   className="w-52 h-52"
                 />
               </View>
+
               {/* degree celcius */}
               <View className="space-y-2">
                 <Text className="text-center font-bold text-white text-6xl ml-5">
@@ -217,7 +221,8 @@ export default function HomeScreen() {
                       className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-1 mr-4 bg-white-rgba">
                       <Image
                         source={
-                          weatherImages[item?.day?.condition?.text || 'other']
+                          weatherImages[current?.condition?.text] ||
+                          weatherImages['other']
                         }
                         className="w-11 h-11"
                       />
